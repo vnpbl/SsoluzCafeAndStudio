@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ssoluz Cafe and Studio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Ssoluz Cafe and Studio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="studio.html" id="studioDropdown" role="button">
+                            Studio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="studioDropdown">
+                            <li><a class="dropdown-item" href="studio.html#packages">Packages</a></li>
+                            <li><a class="dropdown-item" href="studio.html#gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="contact.html" id="navbarDropdown"
+                            role="button">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="contact.html#contact-details">Contact Details</a></li>
+                            <li><a class="dropdown-item" href="contact.html#booking-form">Booking Form</a></li>
+                            <li><a class="dropdown-item" href="contact.html#faq">FAQ</a></li>
+                            <li><a class="dropdown-item" href="contact.html#map">Map</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative">
+            <h1 class="display-3 fw-bold">Contact Us</h1>
+            <p class="lead">We'd love to hear from you! Reach out for bookings, inquiries, or just to say hello.</p>
+        </div>
+    </section>
+
+    <!-- Contact Details and Booking Form -->
+    <section id="contact-details" class="contact-booking py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Details -->
+                <div class="col-md-6 mb-4">
+                    <h2 class="fw-bold mb-4">Contact Details</h2>
+                    <div class="contact-info">
+                        <!-- Address -->
+                        <div class="contact-item d-flex align-items-start mb-3">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p class="mb-0">Chairman’s Place, 27 P. Ocampo, San Isidro, <br> Taytay, 1920 Rizal,
+                                    Philippines</p>
+                            </div>
+                        </div>
+                        <!-- Phone -->
+                        <div class="contact-item d-flex align-items-start mb-3">
+                            <i class="fas fa-phone me-2"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p class="mb-0">+63 905 097 0640</p>
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="contact-item d-flex align-items-start mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p class="mb-0">ssoluzstudio@gmail.com</p>
+                            </div>
+                        </div>
+                        <!-- Hours -->
+                        <div class="contact-item d-flex align-items-start mb-3">
+                            <i class="fas fa-clock me-2"></i>
+                            <div>
+                                <h4>Hours</h4>
+                                <p class="mb-0">Monday - Sunday: 9:00 AM - 9:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Booking Form -->
+                <div id="booking-form" class="col-md-6">
+                    <h2 class="fw-bold mb-4">Booking Form</h2>
+                    <form action="mailto:ssoluzstudio@gmail.com" method="post" enctype="text/plain">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" name="First Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" name="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="Phone Number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Service</label>
+                            <select class="form-select" id="service" name="Service" required>
+                                <option value="">Select a service</option>
+                                <option value="Ssoluz Package A">Ssoluz Package A</option>
+                                <option value="Ssoluz Package B">Ssoluz Package B</option>
+                                <option value="Group Package A">Group Package A</option>
+                                <option value="Group Package B">Group Package B</option>
+                                <option value="Birthday Package A">Birthday Package A</option>
+                                <option value="Birthday Package B">Birthday Package B</option>
+                            </select>
+                        </div>
+                        <!-- Date and Time -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="date" class="form-label">Date</label>
+                                <input type="date" class="form-control" id="date" name="Date" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="time" class="form-label">Time Slot</label>
+                                <input type="time" class="form-control" id="time" name="Time Slot" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="people" class="form-label">How Many People?</label>
+                            <input type="number" class="form-control" id="people" name="Number of People" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="requests" class="form-label">Special Requests</label>
+                            <textarea class="form-control" id="requests" name="Special Requests" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100">Book Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                            What are the inclusions for packages?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Each package includes access to our self-shoot studio, professional lighting, and props.
+                            Some
+                            packages also include printed photos and digital copies.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            Can I bring my own props?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, you are welcome to bring your own props for your photoshoot.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                            Do you have Wi-Fi?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes! We offer free Wi-Fi for all our customers.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                            Are pets allowed?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes! We are a pet-friendly café and studio.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                            Can I rent both the café and studio for a private event?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes! You can rent the entire café and studio for private events, such as birthday parties,
+                            corporate gatherings, workshops, and intimate celebrations. Contact us for availability and
+                            pricing details.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="map-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Our Location</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.4639001823407!2d121.12672828909439!3d14.572622074567779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7e95522656b%3A0xfe90a287f74b013d!2sSsoluz%20Cafe%20and%20Studio!5e0!3m2!1sen!2sph!4v1741869660005!5m2!1sen!2sph"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Column 1: Social Links -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ssoluz.cafeandstudio/" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/ssoluzcafeandstudio/" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@ssoluzcafeandstudio/" class="social-icon">
+                        <i class="fab fa-tiktok"></i>
+                        <span>Tiktok</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Column 2: Site Map -->
+            <div class="footer-column">
+                <h3>Site Map</h3>
+                <ul class="site-map">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Developer Info -->
+            <div class="footer-column">
+                <h3>Developers</h3>
+                <ul class="developer-list">
+                    <li><a href="https://www.linkedin.com/in/naveenpablo/" target="_blank">Naveen Pablo</a></li>
+                    <li><a href="#" target="_blank">James Berina</a></li>
+                    <li><a href="#" target="_blank">Lorenzo Sagarbarria</a></li>
+                    <li><a href="" target="_blank">Sophia Fiona Sta Rosa</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom: Copyright -->
+        <div class="footer-bottom ">
+            <p>&copy; 2025 Ssoluz Cafe and Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const params = new URLSearchParams(window.location.search);
+            const selectedService = params.get("service");
+
+            if (selectedService) {
+                const serviceDropdown = document.getElementById("service");
+                for (let option of serviceDropdown.options) {
+                    if (option.value === selectedService) {
+                        option.selected = true;
+                        break;
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

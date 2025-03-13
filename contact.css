@@ -1,0 +1,81 @@
+/* Hero Section */
+.hero-section {
+    background: url('images/contact_cover.jpg') center/cover no-repeat;
+    position: relative;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+}
+
+
+/* Contact Details */
+.col-md-6 h2 {
+    padding-bottom: 1rem;    
+}
+
+.contact-info .contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info .contact-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.contact-info .contact-item h4 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.contact-info .contact-item p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+
+/* Booking Form */
+.booking-form label {
+    font-weight: bold;
+}
+
+
+/* FAQ Section */
+.faq-section .accordion-button {
+    font-weight: normal;
+}
+
+.faq-section .accordion-body {
+    font-size: 14px;
+}
+
+
+/* Map Section */
+.map-section iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

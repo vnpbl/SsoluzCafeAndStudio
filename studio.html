@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ssoluz Cafe and Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="studio.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Ssoluz Cafe and Studio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="studio.html" id="studioDropdown" role="button">
+                            Studio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="studioDropdown">
+                            <li><a class="dropdown-item" href="studio.html#packages">Packages</a></li>
+                            <li><a class="dropdown-item" href="studio.html#gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdown" role="button">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="contact.html#contact-details">Contact Details</a></li>
+                            <li><a class="dropdown-item" href="contact.html#booking-form">Booking Form</a></li>
+                            <li><a class="dropdown-item" href="contact.html#faq">FAQ</a></li>
+                            <li><a class="dropdown-item" href="contact.html#map">Map</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section vh-100 d-flex align-items-center justify-content-center text-center text-white">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative">
+            <h1 class="display-3 fw-bold mb-4">Capture Your Moments at Our Self-Shoot Studio</h1>
+            <p class="lead mb-5 px-5">Enjoy the freedom to create in a fully equipped studio designed for your vision.
+                Our packages include everything you need for stunning photos at your own pace.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#gallery" class="btn btn-light btn-lg">Gallery <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Explore Our Self-Shoot Studio Packages</h2>
+            <div class="row g-4">
+                <!-- Package 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Ssoluz Package A</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">₱399</h4>
+                            <p class="card-text">30 minutes</p>
+                            <ul class="list-unstyled">
+                                <li>Good for 1-2 pax</li>
+                                <li>20 minutes of unlimited shots</li>
+                                <li>5 minutes for instructions and sanitation</li>
+                                <li>5 minutes for choosing and printing</li>
+                                <li>2 printed photos (2"x3")</li>
+                            </ul>
+                            <a href="contact.html?service=Ssoluz Package A" class="btn btn-dark w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Ssoluz Package B</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">₱1,099</h4>
+                            <p class="card-text">1 hour</p>
+                            <ul class="list-unstyled">
+                                <li>Good for 1-2 pax</li>
+                                <li>45 minutes of unlimited shots</li>
+                                <li>5 minutes for instructions and sanitation</li>
+                                <li>10 minutes for choosing and printing</li>
+                                <li>4 printed photos (2"x3")</li>
+                            </ul>
+                            <a href="contact.html?service=Ssoluz Package B" class="btn btn-dark w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Group Package A</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">₱750</h4>
+                            <p class="card-text">30 minutes</p>
+                            <ul class="list-unstyled">
+                                <li>Good for 6 pax</li>
+                                <li>20 minutes of unlimited shots</li>
+                                <li>5 minutes for instructions and sanitation</li>
+                                <li>5 minutes for choosing and printing</li>
+                                <li>4 printed photos (2"x3")</li>
+                            </ul>
+                            <a href="contact.html?service=Group Package A" class="btn btn-dark w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Group Package B</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">₱1,750</h4>
+                            <p class="card-text">1 hour</p>
+                            <ul class="list-unstyled">
+                                <li>Good for 6 pax</li>
+                                <li>45 minutes of unlimited shots</li>
+                                <li>5 minutes for instructions and sanitation</li>
+                                <li>10 minutes for choosing and printing</li>
+                                <li>6 printed photos (2"x3")</li>
+                            </ul>
+                            <a href="contact.html?service=Group Package B" class="btn btn-dark w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Birthday Package A</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">₱1,800</h4>
+                            <p class="card-text">1 hour</p>
+                            <ul class="list-unstyled">
+                                <li>Good for 1-3 pax</li>
+                                <li>50 minutes of unlimited shots</li>
+                                <li>4 printed photos (2"x3")</li>
+                                <li>Digital copies of all photos (RAW)</li>
+                                <li>Includes birthday props and decorations</li>
+                            </ul>
+                            <a href="contact.html?service=Birthday Package A" class="btn btn-dark w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Birthday Package B</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">₱2,500</h4>
+                            <p class="card-text">1 hour</p>
+                            <ul class="list-unstyled">
+                                <li>Good for 4-6 pax</li>
+                                <li>50 minutes of unlimited shots</li>
+                                <li>8 printed photos (2"x3")</li>
+                                <li>Digital copies of all photos (RAW)</li>
+                                <li>Includes birthday props and decorations</li>
+                            </ul>
+                            <a href="contact.html?service=Birthday Package B" class="btn btn-dark w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-3 fw-bold">Self-Shoot Studio Highlights</h2>
+            <p class="text-center mb-5">Explore stunning self-shoot sessions captured in our studio.</p>
+            <div class="row g-4">
+                <!-- Gallery Images -->
+                <div class="col-md-4">
+                    <img src="images/img1.jpg" alt="Self-Shoot Image 1" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/img2.jpg" alt="Self-Shoot Image 2" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/img3.jpg" alt="Self-Shoot Image 3" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/img4.jpg" alt="Self-Shoot Image 4" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/img5.jpg" alt="Self-Shoot Image 5" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/img6.jpg" alt="Self-Shoot Image 6" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/img7.jpg" alt="Self-Shoot Image 7" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/img8.jpg" alt="Self-Shoot Image 8" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/img9.jpg" alt="Self-Shoot Image 9" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Column 1: Social Links -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ssoluz.cafeandstudio/" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/ssoluzcafeandstudio/" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@ssoluzcafeandstudio/" class="social-icon">
+                        <i class="fab fa-tiktok"></i>
+                        <span>Tiktok</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Column 2: Site Map -->
+            <div class="footer-column">
+                <h3>Site Map</h3>
+                <ul class="site-map">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Developer Info -->
+            <div class="footer-column">
+                <h3>Developers</h3>
+                <ul class="developer-list">
+                    <li><a href="https://www.linkedin.com/in/naveenpablo/" target="_blank">Naveen Pablo</a></li>
+                    <li><a href="#" target="_blank">James Berina</a></li>
+                    <li><a href="#" target="_blank">Lorenzo Sagarbarria</a></li>
+                    <li><a href="" target="_blank">Sophia Fiona Sta Rosa</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom: Copyright -->
+        <div class="footer-bottom ">
+            <p>&copy; 2025 Ssoluz Cafe and Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
