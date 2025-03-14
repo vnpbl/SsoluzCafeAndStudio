@@ -1,0 +1,44 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapers.com/images/hd/cafe-background-fxl425s6qlh6xvug.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* About Section */
+#about img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Services Section */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Section */
+#gallery img {
+    transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
