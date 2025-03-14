@@ -5,28 +5,107 @@ body {
     color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    color: white;
+}
+
+h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    color: #D4A373; 
+}
+
+a {
+    text-decoration: none;
+    color: #D4A373; 
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #B5835D; 
 }
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapers.com/images/hd/cafe-background-fxl425s6qlh6xvug.jpg');
+    height: 100vh;
+    background-image: url('images/index_cover.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #D4A373; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* About Section */
+#about {
+    background-color: #FAF3E0; 
+    padding: 4rem 0;
+}
+
 #about img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+#about h2 {
+    color: #D4A373; 
+}
+
+#about p {
+    color: #333; 
 }
 
 /* Services Section */
+#services {
+    background-color: #FAF3E0; 
+    padding: 4rem 0;
+}
+
+#services h2 {
+    color: #D4A373; 
+}
+
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
@@ -34,11 +113,49 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Gallery Section */
-#gallery img {
-    transition: transform 0.3s ease;
+.card h3 {
+    color: #D4A373; 
 }
 
-#gallery img:hover {
-    transform: scale(1.05);
+.card p {
+    color: #666; 
+}
+
+/* Features Section */
+#features {
+    background-color: #FAF3E0; 
+    padding: 4rem 0;
+}
+
+#features h2 {
+    color: #D4A373; 
+}
+
+#features p.lead {
+    color: #333; 
+}
+
+.feature-card {
+    padding: 1.5rem;
+    background-color: white; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card i {
+    color: #D4A373; 
+}
+
+.feature-card h3 {
+    color: #D4A373; 
+}
+
+.feature-card p {
+    color: #666; 
 }
